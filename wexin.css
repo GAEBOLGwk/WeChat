@@ -2,31 +2,245 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font: 14px/1.6 -apple-system-font,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft YaHei,Arial,sans-serif;
+}
+p {
+    margin: .33em 0;
+}
+h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-.wrap{
+/* .wrap{
     width: 968px;
     height: 100%;
     margin: auto;
-}
+} */
 
 .head{
-    position: absolute;
     width: 100%;
     height: 75px;
     background: #000000;
+    overflow: hidden;
 }
-.inside{
+.head .inside{
+    height: 100%;
     width: 968px;
-    height: 75px;
-    background: #000000;
+    margin: auto;
+}
+.head .nav  span {
+    display: inline-block;
+    padding-right: 10px;
+    cursor: pointer;
+    margin: 0;
+}
+.nav_home{
+    border-radius: 49px;
+    background: #202122;
+    box-shadow: inset 10px 10px 11px #333435, inset -10px -10px 11px #595b5c;
+}
+.head .nav span:hover{
+ color: red;
+}
+.logo{
+    float: left;
+    margin-top: 14px;
+    height: 44px;
+    width: 130px;
+}
+.nav {
+    float: right;
+    padding-top: 21px;
+    width: 748px;
+    height: 54px; 
+}
+.nav li{
+    display: inline;
+}
+.nav li span {
+    padding-left: 10px;
+    margin: 0 2px;
+    line-height: 33px;
+    color: #fff;
+}
+.intro{
+    width: 100%;
+    background: #DDDDDF;
+}
+.intro-wrap {
+    width: 968px;
+    margin: auto;
+    height: 424px;
+    margin-bottom: 44px; 
+}
+.intro-box{
+    float: left;
+}
+.intro p {
+    font-size: 16px;
+    color: #979797;
+}
+.intro h1 {
+    padding: 45px 0 3px;
+    font-size: 32px;
+}
+.intro p {
+    font-size: 16px;
+    color: #979797;
+}
+.intro a.btn_download {
+    display: block;
+    width: 224px;
+    height: 64px;
+    margin-top: 15px;
+    background: #348903;
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 64px;
+    border-radius: 10px;
+}
+.weixin_home_link a{
+    text-decoration: none;
+    color: #609700;
+    cursor: pointer;
+    outline: none;
+}
+.weixin_home_link li{
+    line-height: 1.8;
+    color: #999;
+    margin-right: 30px;
+}
+.dot {
+    float: left;
+    display: block;
+    margin: 10px 11px 0 0;
+    height: 6px;
+    width: 6px;
+    border-radius: 5px;
+    background-color: #999;
+}
+.img_intro{
+    float: left;
+}
+.img_intro #circleList{
+    overflow: hidden;
+    position: relative;
+    width: 490px;
+    height: 404px;
+    margin-left: 80px;
+}
+.circleList li {
+    position: absolute; 
+    top: 100px; 
+    left: 940px;
+    opacity: 0; 
+    z-index: 1;
+}
+.circleList li img{
+    width: 475px;
+    height: 275px;
 }
 
-.logo{
-    width: 130px;
-    height: 44px;
+#leftMove{
+    position: absolute;
+
+}
+#rightMove{
+    position: absolute;
+}
+
+
+.func-wrap{
+    width: 968px;
+    margin: auto;
+}
+.func li {
+    float: left;
+    width: 216px;
+}
+.func img{
+    width: 200px;
+    height: 114px;
+}
+.func p {
+    color: #999;
+}
+.func li a{
+    color: #609700;
+}
+
+.update_diary {
+    margin-left: 650px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.update_diary a {
+    text-decoration: none;
+    color: #609700;
+    cursor: pointer;
+    outline: none;
+}
+.update_diary li{
+    margin: 5px 0;
+    white-space: nowrap;
+}
+.dot {
+    float: left;
+    display: block;
+    margin: 10px 11px 0 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+.update_diary .right {
+    font-family: Courier New,Courier,monospace;
+    color: #999999;
+}
+.right{
+    float: right;
+}
+.contactus{
+    width: 124px;
+    height: 40px;
+    line-height: 40px;
+}
+.contactus img{
+    width: 32px;
+    height: 32px;
+}
+.contactus a{
+    top: -10px;
+    position: relative;
+    color: #000000;
+    font-weight: 700;
+}
+
+.footer {
+    clear: both;
+    border-top: 1px solid #d4dadf;
+    font-size: 12px;
+    text-align: center;
+    color: #d8d8d8;
+    padding: 10px 0; 
+    height: 50px;
+    width: 986px;
+    margin: 22px auto 0;       
+}
+.footer a{
+    color: #888888;
+}
+.footer p{
+    color: #888888;
 }
