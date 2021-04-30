@@ -27,13 +27,14 @@ a{
 .head{
     width: 100%;
     height: 75px;
-    background: #000000;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #3E3E3E, #000000);
     overflow: hidden;
 }
 .head .inside{
     height: 100%;
     width: 968px;
-    margin: auto;
+    margin:0 auto;
 }
 .head .nav  span {
     display: inline-block;
@@ -41,14 +42,29 @@ a{
     cursor: pointer;
     margin: 0;
 }
-.nav_home{
+.nav li a:hover{
+    display: inline-block;
     border-radius: 49px;
-    background: #202122;
-    box-shadow: inset 10px 10px 11px #333435, inset -10px -10px 11px #595b5c;
+    background: #2D2D2D;
+    box-shadow: inset 17px 17px 26px #111111,
+            inset -17px -17px 26px #323232;
+    /* border: 1px solid red; */
 }
-.head .nav span:hover{
+
+.nav_home a{
+    display: inline-block;
+    /* border: 1px solid#1D1D1D; */
+    border-radius: 49px;
+    background: #2D2D2D;
+    /* box-shadow: inset 7px 7px 9px #1a1a1a,
+            inset -7px -7px 9px #282828; */
+    box-shadow: inset 17px 17px 26px #111111,
+            inset -17px -17px 26px #323232;
+}
+
+/* .head .nav span:hover{
  color: red;
-}
+} */
 .logo{
     float: left;
     margin-top: 14px;
@@ -115,12 +131,16 @@ a{
     cursor: pointer;
     outline: none;
 }
+.weixin_home_link a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
 .weixin_home_link li{
     line-height: 1.8;
     color: #999;
     margin-right: 30px;
 }
-.dot {
+.spot {
     float: left;
     display: block;
     margin: 10px 11px 0 0;
@@ -151,6 +171,14 @@ a{
     height: 275px;
 }
 
+.gray a{
+    margin-right:8px; 
+    color: #609700;
+}
+.gray a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
 #leftMove{
     position: absolute;
 
@@ -158,6 +186,46 @@ a{
 #rightMove{
     position: absolute;
 }
+/* .img_intro #currentPic {
+    position: relative;
+    left: 250px;
+    top: -30px;
+    z-index: 100;
+    height: 26px;
+    width: 78px;
+    float: left;
+    display: block;
+} */
+ #currentPic{
+    text-align: center;
+    line-height: 26px;
+}
+#currentPic li{
+    display:inline;
+}
+#currentPic li a{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: #609700;
+    text-indent: -9999px;
+}
+
+/* #currentPic li{
+    white-space: nowrap;
+} */
+/* #currentPic li a {
+    display: inline-block;
+    height: 26px;
+    width: 26px;
+    color: #609700;
+    margin: 10px 11px 0 0;
+    height: 4px;
+    width: 4px;
+    border-radius: 5px;
+    background-color: #609700;
+} */
+
 
 
 .func-wrap{
@@ -178,7 +246,10 @@ a{
 .func li a{
     color: #609700;
 }
-
+.func li a:hover{
+    text-decoration: underline;
+    color: #333333;
+}
 .update_diary {
     margin-left: 650px;
     padding-bottom: 10px;
@@ -193,6 +264,10 @@ a{
 .update_diary li{
     margin: 5px 0;
     white-space: nowrap;
+}
+.update_diary a:hover{
+    text-decoration: underline;
+    color: #333333;
 }
 .dot {
     float: left;
